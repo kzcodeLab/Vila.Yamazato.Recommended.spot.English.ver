@@ -1,0 +1,107 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #FFFFFF; /* White page background */
+}
+
+.hero-header {
+    background-color: #353742;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.page-container {
+    max-width: 1200px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    background-color: #F9F9F9; /* Light grey background for sections */
+    border: 1px solid #E0E0E0; /* Very light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px; /* Further reduced margin */
+    padding-bottom: 2px; /* Further reduced padding */
+}
+
+/* Category Navigation Cards */
+
+.category-card {
+    background-color: #EFEFEF; /* Light grey card background */
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    overflow: hidden; /* To make sure image corners are rounded */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.category-card .card-img-top {
+    width: 100%;
+    height: 180px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.category-card .card-body {
+    padding: 16px;
+    text-align: center;
+}
+
+.category-card .card-title {
+    font-weight: bold;
+}
+
+/* Individual Spot Cards */
+.spot-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.spot-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.spot-card .card-title a {
+    color: #0000CC;
+    text-decoration: underline; /* Add underline */
+    font-weight: bold;
+}
+
+.spot-card .card-title a:hover {
+    color: #000066; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+.spot-card .card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background-color: #353742;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
