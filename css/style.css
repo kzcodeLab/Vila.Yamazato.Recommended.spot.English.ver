@@ -39,6 +39,15 @@ body {
 
 /* Category Navigation Cards */
 
+.category-card, .spot-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover, .spot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
 .category-card {
     background-color: #EFEFEF; /* Light grey card background */
     border-radius: 8px;
@@ -46,12 +55,6 @@ body {
     color: #333;
     display: block;
     overflow: hidden; /* To make sure image corners are rounded */
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .category-card .card-img-top {
@@ -75,23 +78,45 @@ body {
 .spot-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    transition: box-shadow 0.3s;
 }
 
-.spot-card:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.spot-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.spot-card .card-title a {
-    color: #0000CC;
-    text-decoration: underline; /* Add underline */
+.spot-card .card-title {
+    text-align: center;
     font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
 }
 
-.spot-card .card-title a:hover {
-    color: #000066; /* Darker blue on hover */
-    text-decoration: underline;
+.spot-card .card-text {
+    flex-grow: 1;
 }
+
+.gmap-btn {
+    background-color: #4A90E2;
+    color: white !important; /* Ensure text is white */
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.gmap-btn:hover {
+    background-color: #357ABD;
+    color: white !important;
+    text-decoration: none;
+}
+
 
 .spot-card .card-footer {
     background-color: #f8f9fa;
